@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>Home - TaskDiary</title>
+{% endblock title %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <img src="{% static 'images/diary.jpg' %}" class="round-lg shadow" alt="Diary" width='360' height='250'>
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/laptop.jpg' %}" class="round-lg shadow"alt="Laptop" width='360' height='250'>
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/success.jpg' %}" class="round-lg shadow" alt="Success" width='360' height='250'>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-primary">Ouick And Easy to Use Our Task Diary</p></center>
+                <center><p class="h2 mt-3">Plan All Your Schedule</p></center>
+                <center><p class="h5">Get Success</p></center>
+                <center><a href="{% url 'tasklist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 round-lg shadow" >Lets Started</button></a></center>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
