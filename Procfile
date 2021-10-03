@@ -1,1 +1,1 @@
-web: gunicorn taskdiary.wsgi
+web: gunicorn TaskDiary.wsgi
