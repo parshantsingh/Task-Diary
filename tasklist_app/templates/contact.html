@@ -4,6 +4,13 @@
 {% endblock title %}
 {% block content %}
     <div class="container">
-        <h1>{{contact_text}}</h1>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-info">Details</p></center>
+                <center><p class="h2 mt-3 text-secondary">Task Diary</p></center>
+                <center><p class="h5 text-info" >Contact Us at : <strong>parshantnain99@gmail.com</strong></p></center>
+                <center><a href="{% url 'tasklist' %}"><button type="button" class="btn btn-success text-white col-sm-4 my-2 my-sm-0 btn-lg mt-3 round-lg shadow" >Lets Started</button></a></center>
+            </div>
+        </div>
     </div>
 {% endblock content %}
