@@ -6,7 +6,12 @@
 {% endblock title %}
 {% block content %}
     <div class="container">
-    <br>
-        <h4>Logged Out from TaskDiary, Thanks for Using Us !!</h4>  
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-info">Logged Out from TaskDiary, Thanks for Using Us !!</p></center>
+                <center><p. class="h2 mt-3 text-secondary">We hope you had good time with us</p.></center>
+                <center><p class="h5 text-warning mt-2 mb-2" >To login Again !! Click Below. </p></center>
+                <center><a href="{% url 'tasklist' %}"><button type="button" class="btn btn-success text-white col-sm-4 my-2 my-sm-0 btn-lg mt-4 round-lg shadow" >Login</button></a></center>
+            </div>  
     </div>
 {% endblock content %}
